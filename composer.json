@@ -1,7 +1,5 @@
 {
     "require": {
         "altorouter/altorouter": "^1.2",
-        "jwilsson/spotify-web-api-php": "^1.11",
-        "klein/klein": "^2.1"
     }
 }
