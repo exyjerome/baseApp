@@ -1,5 +1,6 @@
 <?php
-error_reporting(E_ALL);
+error_reporting(0);
+
 require __DIR__ . '/vendor/autoload.php';
 
 spl_autoload_register (function($class) {
