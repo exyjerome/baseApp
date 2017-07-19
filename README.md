@@ -2,29 +2,38 @@
 
 ### Setup
 
- - Start by cloning this repo
- - Run `composer install`
- - Add  your controllers/views
- - Define some routes in `config/routes.php`
+- Start by cloning this repo
+- Run `composer install`
+- Add  your controllers/views
+- Define some routes in `config/routes.php`
 
- ### Controllers
+### Controllers
 
- Controllers are currently extremely basic with some basic methods, you should always extend the `Controller_Base` class
+Controllers are currently extremely basic with some basic methods, you should always extend the `Controller_Base` class
 
- ### Views
+### Views
 
- Put them in `views/` -- for example, `views/homepage.html`
- 
- You can then display this view from your controller with `$this->view('homepage');`
+Put them in `views/` -- for example, `views/homepage.html`
 
- Or you can do `$this->view('homepage', ['title' => 'My App']);` which makes the `$title` var available in the view.
+You can then display this view from your controller with `$this->view('homepage');`
 
- ### Routing
+Or you can do
+```php
+$this->view('homepage', [
+    'title' => 'My App'
+]);
+```
+which makes the `$title` var available in the view.
 
- Routing uses `AltoRouter` which is more or less `klein.php` 
+### Routing
 
- Define routes in `config/routes.php` ie, `$router->map('GET|POST', '/my-route', 'Controller@Action');`
+Routing uses `AltoRouter` which is more or less `klein.php` 
 
- ### Models
+Define routes in `config/routes.php` ie, 
+```php
+$router->map('GET|POST', '/my-route', 'Controller@Action');
+```
 
- Models currently don't exist within baseApp
+### Models
+
+Models currently don't exist within baseApp
