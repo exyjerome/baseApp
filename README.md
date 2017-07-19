@@ -25,3 +25,7 @@
  Routing uses `AltoRouter` which is more or less `klein.php` 
 
  Define routes in `config/routes.php` ie, `$router->map('GET|POST', '/my-route', 'Controller@Action');`
+
+ ### Models
+
+ Models currently don't exist within baseApp
